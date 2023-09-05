@@ -12,7 +12,7 @@ type DeclareCommands struct {
 }
 
 func (d *DeclareCommands) ID() int32 {
-	return 0x12
+	return 0x10
 }
 
 func (d *DeclareCommands) Decode(r *Reader) error {
