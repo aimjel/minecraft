@@ -11,6 +11,7 @@ type JoinGame struct {
 	GameMode         uint8
 	PreviousGameMode int8
 	DimensionNames   []string
+	MaxPlayers int32
 
 	//Dimension Codec & Dimension
 
