@@ -16,10 +16,8 @@ type JoinGame struct {
 
 	DimensionName       string
 	HashedSeed          int64
-	MaxPlayers          int32
 	ViewDistance        int32
 	ReducedDebugInfo    bool
-	EnableRespawnScreen bool
 	IsDebug             bool
 	IsFlat              bool
 }
