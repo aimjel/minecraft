@@ -105,6 +105,11 @@ func (w *Writer) ByteArray(x []byte) error {
 	return err
 }
 
+func (w *Writer) FixedByteArray(x []byte) error {
+	_, err := w.wr.Write(x)
+	return err
+}
+
 func (w *Writer) VarIntArray(x []int32) error {
 	if err := w.VarInt(int32(len(x))); err != nil {
 		return fmt.Errorf("%v wrintng varint32 array length", err)
